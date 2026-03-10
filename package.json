@@ -27,5 +27,12 @@
 		"tailwindcss": "^4.1.18",
 		"typescript": "^5.9.3",
 		"vite": "^7.3.1"
+	},
+	"dependencies": {
+		"@threlte/core": "^8.4.1",
+		"@threlte/extras": "^9.8.1",
+		"@types/three": "^0.183.1",
+		"svelte-tweakpane-ui": "^1.5.15",
+		"three": "^0.183.2"
 	}
 }
