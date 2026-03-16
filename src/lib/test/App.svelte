@@ -36,15 +36,8 @@
     />
 </Pane>
 
-<div class="bg-slate-800">
+<div>
     <Canvas>
-        <Stars />
         <Scene x={x} y={y} tilt={tilt} />
     </Canvas>
 </div>
-
-<style>
-    div {
-        height: 100%;
-    }
-</style>

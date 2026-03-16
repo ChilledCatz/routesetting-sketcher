@@ -1,2 +1,3 @@
+@source "../lib/components/ui";
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
