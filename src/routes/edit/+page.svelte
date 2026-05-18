@@ -1,36 +1,11 @@
 <script lang="ts">
-	import { T, Canvas } from "@threlte/core";
-	import { Gizmo, Grid, OrbitControls, Outlines } from "@threlte/extras";
-	import { CylinderGeometry, Group } from "three";
+	import EditorScene from "$lib/components/editor/EditorScene.svelte";
+	import { Canvas } from "@threlte/core";
+
 </script>
 
-<Canvas>
-    <T.PerspectiveCamera
-        makeDefault
-        position={10}
-    >
-        <OrbitControls>
-            <Gizmo 
-
-            />
-        </OrbitControls>
-    </T.PerspectiveCamera>
-
-    <T.Group>
-        <T.Mesh position={[ 0, 0, 0 ]}>
-            <T.MeshBasicMaterial color="white"/>
-            <T.CylinderGeometry args={[ 5, 7.5, 10, 8 ]} />
-
-            <Outlines color="blue" thickness={0.2} />
-        </T.Mesh>
-        <T.LineSegments>
-            <T.EdgesGeometry args={[new CylinderGeometry(5, 7.5, 10, 8)]} />
-            <T.LineBasicMaterial 
-                color="blue"
-                lineWidth={2}
-            />
-        </T.LineSegments>
-    </T.Group>
-
-    <Grid position={[ 0, -5.001, 0 ]} />
-</Canvas>
+<div style="touch-action: none; width: 100%; height: 100%;">
+    <Canvas>
+        <EditorScene />
+    </Canvas>
+</div>
